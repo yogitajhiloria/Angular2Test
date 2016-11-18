@@ -1,0 +1,36 @@
+<div>
+  <div class="panel panel-success">
+    <div class="panel-heading">
+      {{movies.title}}
+    </div>
+  <div class="panel-body">
+<div class="Response">
+  <div class="row">
+    <img class="poster lazyautosizes lazyloaded col-md-3" data-sizes="auto" [src]="'https://image.tmdb.org/t/p/w300_and_h450_bestv2/'+movies.poster_path" [alt]="movies.title" sizes="300px">
+    <div class="col-md-9">
+    <div class="row ">
+     <h1>Overview</h1>
+    </div>
+<div class="row">
+  {{movies.overview}}
+</div>
+<div class="row">
+ <h1>Status</h1>
+</div>
+<div class="row">
+{{movies.status}}
+</div>
+<div class="row">
+ <h1>Vote Count</h1>
+</div>
+<div class="row">
+{{movies.vote_count}}
+</div>
+    </div>
+  </div>
+
+</div>
+  </div>
+  <div class="panel-footer">Panel footer</div>
+</div>
+</div>
